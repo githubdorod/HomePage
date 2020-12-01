@@ -1,2 +1,2 @@
-# HomePage
-Minha HomePage. Escrita em HTML+CSS+JS.
+# MyHomePage
+ Minha Página na Web. Não repare na bagunça!

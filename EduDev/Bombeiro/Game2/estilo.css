@@ -1,0 +1,179 @@
+@charset: "UTF-8";
+
+* {margin: 0; }
+body {
+	/*width: 100%;*/
+	min-width: 900px;
+	background: linear-gradient(to bottom right, #ebebeb 0%, #0099ff 100%) no-repeat;
+	margin: 1% 2% 0;
+}
+
+/*Para utilizar a tag <hr> como quebra de linha*/
+hr{
+	width: 90%;
+	color: white;
+	opacity: 0;
+}
+
+/*Formatação do header*/
+header {
+}
+.logo {
+	width: 80%;
+	display: inline-block;
+}
+.logo h1 {
+	font-size: 6em;
+	text-align: center;
+	font-family: "Major Mono Display";
+}
+/*formatação dos links de redes sociais (superior direito)*/
+.img_navegador {
+	position: absolute;
+	top: 1%;
+	right: 1%;
+	display: inline;
+}
+.img_navegador li {
+	display: inline;
+	padding: 10px 5px;
+}
+.img_navegador img {
+	width: 6em;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	transition: all 0.3s;
+	opacity: 0.5;
+}
+.img_navegador img:hover {
+	transform: rotate(-0.02turn);
+	opacity: 1;
+}
+
+/*formatação do navegador*/
+nav {
+	width: 100%;
+	padding: 1em 0;
+	margin: 1em 0;
+	border: 2px solid black;
+	border-radius: 20px;
+	text-align: center;
+	background-color: rgba(210, 240, 240, 0.5)
+}
+nav li {
+	padding: 0 20px;
+	display: inline;
+	font-family: Staatliches;
+	font-size: 2em;
+}
+#paginaAtual{
+	color: #111111;
+	text-decoration: underline;
+	display: inline;
+}
+nav a {
+	text-transform: uppercase;
+	color: #000000;
+	text-decoration: none;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+nav a:hover {
+	text-shadow: 1px 1px 5px #01579B;
+}
+
+/*FORMATAÇÃO DO CONTEÚDO*/
+content{
+	width: 100%;
+	display: inline-block;
+}
+/*FORMATAÇÃO DO ARTICLE*/
+section{
+	width: 80%;
+	padding: 1em 0px;
+	margin: 1em 0;
+	border: 2px solid black;
+	border-radius: 20px;
+	background-color: rgba(210, 240, 240, 0.5);
+	/*display: inline-block;*/ 	float: left;
+}
+article {
+	padding: 15px 10px;
+}
+article h2 {
+	text-indent: 20px;
+	font-family: Staatliches;
+	font-size: 1.5em;
+	text-decoration: underline;
+}
+article h3{
+	text-indent: 20px;
+	font-family: EB Garamond;
+	font-size: 1em;
+	padding: 5px 0;
+	text-decoration: none;
+}
+article p{
+	text-indent: 20px;
+	font-family: EB Garamond;
+	font-size: 1em;
+	line-height: 1em;
+	text-align: justify;
+	padding: 1px 0;
+	vertical-align: text-bottom;
+}
+article img{
+	width: 1em;
+	margin: 0.5em 0.3em 0;
+	-moz-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+article a img:hover{
+	-moz-transition: scale (1.5);
+	-webkit-transform: scale(1.5);
+	transform: scale(1.5);
+}
+article p a{
+	text-decoration: none;
+	text-decoration-color: none;
+	color: #1a0000;
+}
+
+/*FORMATAÇÃO DO SIDEBAR*/
+.sidebar{
+	width: 19%;
+	float: right;
+	position: sticky;
+	top: 5%;
+	margin: 1em 0;
+	
+}
+.sidebar img{
+	width: 100%;
+	border-radius: 20px;
+	border: 2px solid black;
+}
+
+/*FORMATAÇÃO DO FOOTER*/
+
+footer{
+	width: 100%;
+	background-color: rgba(210, 240, 240, 0.5);
+	border-radius: 20px;
+	border: 2px solid black;
+	max-height: 5em;
+	overflow-y: scroll;
+}
+footer p{
+	text-indent: 20px;
+	font-family: EB Garamond;
+	font-size: 1em;
+	line-height: 1em;
+	text-align: justify;
+	padding: 1px 0;
+	vertical-align: text-bottom;
+}
+
+
