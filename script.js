@@ -24,13 +24,13 @@ SideBar.init();
 const Texto = {
     home: document.querySelector('#home'),
     sobre: document.querySelector('#sobre'),
-    edudev: document.querySelector('#edudev'),
+    edujogos: document.querySelector('#edujogos'),
     portfolio: document.querySelector('#portfolio'),
     contato: document.querySelector('#contato'),
-    footer: document.querySelector('#footer'),
+    footer: document.querySelector('#footer'), // NÃO ESTÁ EM USO
     homeTexto: document.querySelector('#homeTexto'),
     sobreTexto: document.querySelector('#sobreTexto'),
-    edudevTexto: document.querySelector('#edudevTexto'),
+    edujogosTexto: document.querySelector('#edujogosTexto'),
     portfolioTexto: document.querySelector('#portfolioTexto'),
     contatoTexto: document.querySelector('#contatoTexto'),
     conteudo: document.querySelector('#conteudo'),
@@ -38,7 +38,7 @@ const Texto = {
     selectHome: function () {
         Texto.homeTexto.style.display = "block";
         Texto.sobreTexto.style.display = "none";
-        Texto.edudevTexto.style.display = "none";
+        Texto.edujogosTexto.style.display = "none";
         Texto.portfolioTexto.style.display = "none";
         Texto.contatoTexto.style.display = "none";
     },
@@ -46,15 +46,15 @@ const Texto = {
     selectSobre: function () {
         Texto.homeTexto.style.display = "none";
         Texto.sobreTexto.style.display = "block";
-        Texto.edudevTexto.style.display = "none";
+        Texto.edujogosTexto.style.display = "none";
         Texto.portfolioTexto.style.display = "none";
         Texto.contatoTexto.style.display = "none";
     },
 
-    selectEdudev: function () {
+    selectEdujogos: function () {
         Texto.homeTexto.style.display = "none";
         Texto.sobreTexto.style.display = "none";
-        Texto.edudevTexto.style.display = "block";
+        Texto.edujogosTexto.style.display = "block";
         Texto.portfolioTexto.style.display = "none";
         Texto.contatoTexto.style.display = "none";
     },
@@ -62,16 +62,15 @@ const Texto = {
     selectPortfolio: function () {
         Texto.homeTexto.style.display = "none";
         Texto.sobreTexto.style.display = "none";
-        Texto.edudevTexto.style.display = "none";
+        Texto.edujogosTexto.style.display = "none";
         Texto.portfolioTexto.style.display = "inline";
         Texto.contatoTexto.style.display = "none";
-        Texto.footer.style.position = "relative";
     },
 
     selectContato: function () {
         Texto.homeTexto.style.display = "none";
         Texto.sobreTexto.style.display = "none";
-        Texto.edudevTexto.style.display = "none";
+        Texto.edujogosTexto.style.display = "none";
         Texto.portfolioTexto.style.display = "none";
         Texto.contatoTexto.style.display = "block";
     },
@@ -79,7 +78,7 @@ const Texto = {
     run: function () {
         this.home.addEventListener('click', this.selectHome);
         this.sobre.addEventListener('click', this.selectSobre);
-        this.edudev.addEventListener('click', this.selectEdudev);
+        this.edujogos.addEventListener('click', this.selectEdujogos);
         this.portfolio.addEventListener('click', this.selectPortfolio);
         this.contato.addEventListener('click', this.selectContato);
     },

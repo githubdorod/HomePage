@@ -64,7 +64,7 @@ header {}
 
 /* DEFINE CONTEÚDOS OMITIDOS NO CARREGAMENTO INICUAL A PÁGINA */
 
-#sobreTexto, #edudevTexto, #portfolioTexto, #contatoTexto {
+#sobreTexto, #edujogosTexto, #portfolioTexto, #contatoTexto {
     display: none;
 }
 
@@ -80,9 +80,14 @@ header {}
     margin: 20% 20% 0 15%;
 }
 
-/* PÁGINA EDU-DEV */
+#sobreTexto img {
+    width: 1.5em;
+    vertical-align: middle;
+}
 
-#edudevTexto {
+/* PÁGINA EDUJOGOS */
+
+#edujogosTexto {
     margin: 20% 20% 0 15%;
 }
 
@@ -217,7 +222,7 @@ nav li:hover {
     p {
         font-size: 1.5em;
     }
-    #sobreTexto, #edudevTexto, #homeTexto, #contatoTexto {
+    #sobreTexto, #edujogosTexto, #homeTexto, #contatoTexto {
         margin-top: 30vh;
 
     }
